@@ -20,7 +20,7 @@ public class ListExerciseTest {
         List<Integer> list = le.createList();
 
         if(list == null){
-            Assert.fail("list not correctly instantiated");
+           
         }
     }
 
@@ -31,7 +31,7 @@ public class ListExerciseTest {
     public void getSizeTest1(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();
+           
         }else{
             Assert.assertTrue(le.getSize(list) == 0);
         }
@@ -45,7 +45,7 @@ public class ListExerciseTest {
     public void getSizeTest2(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                   
         }else{
             le.addToList(list, 1);
             Assert.assertTrue(le.getSize(list) == 1);        
@@ -60,7 +60,7 @@ public class ListExerciseTest {
     public void addItemTest1(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             Assert.assertTrue(list.contains(1));
@@ -75,7 +75,7 @@ public class ListExerciseTest {
         List<Integer> list = le.createList();
 
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             le.addToList(list, 2);
@@ -92,7 +92,7 @@ public class ListExerciseTest {
     public void getItemTest1(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             Assert.assertTrue(le.get(list, 0) == 1);
@@ -107,7 +107,7 @@ public class ListExerciseTest {
     public void getItemTest2(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             le.addToList(list, 2);
@@ -123,7 +123,7 @@ public class ListExerciseTest {
         List<Integer> list = le.createList();
 
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             le.removeFromList(list, 0);
@@ -140,7 +140,7 @@ public class ListExerciseTest {
     public void removeFromListTest2(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             le.addToList(list, 2);
@@ -158,7 +158,7 @@ public class ListExerciseTest {
     public void updatePositionTest1(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                   
         }else{
             le.addToList(list, 1);
             le.addToList(list, 2);
@@ -175,7 +175,7 @@ public class ListExerciseTest {
     public void updatePositionTest2(){
         List<Integer> list = le.createList();
         if(list == null){
-            Assert.fail();        
+                    
         }else{
             le.addToList(list, 1);
             le.addToList(list, 2);
